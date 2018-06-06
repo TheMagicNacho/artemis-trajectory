@@ -1,0 +1,34 @@
+  ****** Beginning of mfile2sci() session ******
+  File to convert: /Users/justinpeter/GitHub/artemis-trajectory/matlab/initialcond.m
+  Result file path: /Users/justinpeter/GitHub/artemis-trajectory/
+  Recursive mode: OFF
+  Only double values used in M-file: NO
+  Verbose mode: 3
+  Generate formated code: NO
+  M-file reading...
+  M-file reading: Done
+  Syntax modification...
+  Syntax modification: Done
+  Macro to tree conversion...
+  Conversion of M-tree...
+  L.4: No simple equivalent, so mtlb_fprintf() is called.
+  !! L.27: Matlab function odeset not yet converted, original calling sequence used.
+  !! L.28: Unknown function ODE45 not converted, original calling sequence used.
+  ! L.29: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  ! L.29: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  !! L.29: Unknown function mtlb not converted, original calling sequence used.
+  ! L.29: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  ! L.29: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  !! L.29: Unknown function mtlb not converted, original calling sequence used.
+  ! L.29: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  ! L.29: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  !! L.29: Unknown function mtlb not converted, original calling sequence used.
+  ! L.29: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  ! L.29: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  !! L.29: Unknown function mtlb not converted, original calling sequence used.
+  L.30: No simple equivalent, so mtlb_fprintf() is called.
+  Conversion of M-tree: Done
+  Macro to tree conversion: Done
+  Translation may be improved: see the //! comments and for all mtlb_<funname> function call\n  Type help mtlb_<funname> in Scilab command window to get information about improvements.
+  Translation may be wrong (see the //!! comments).
+  ****** End of mfile2sci() session ******
