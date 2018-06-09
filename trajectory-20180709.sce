@@ -22,7 +22,12 @@ Y0 = 0; //initial horizontal launch distance
 
 
 //          !!!!!! CALCULATOR OUTPUTS !!!!!!!
-psi = 90 - AA; // angle from center line of rocket
+psi0 = 90 - AA; // angle from center line of rocket
 n = (T-D / M0 * Gr); //new constant
+z = tan(psi/2); // calculate change in altitude
+C = V / (z^(n-1) * (1+Z^2) );
+v = C * z^(n-1) * (1+z^2);
 
-//// YOU ARE STILL WORKING ON ENTERING EVERYTHING
+
+///         !!!!!!! PLOT GRAPH !!!!!!!
+plot ( altitude, distance);
