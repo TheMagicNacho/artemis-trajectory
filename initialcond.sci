@@ -1,23 +1,14 @@
-// Display mode
-mode(0);
-
-// Display warning for floating point exception
-ieee(1);
-
-clear
-xdel(winsid())
-file = mtlb_fopen("","w+");
-// L.4: No simple equivalent, so mtlb_fprintf() is called.
-//mtlb_fprintf(file,"mass \t \t \t altitude \t \t \t X \t \t \t V \t \t \t gamma \n");
-global("mdot","T","Re","ge","tstep")
-//Times
-tstep = 1;//sec
+tstep = 1; //sec
 tfinal = 82;//sec
 // Constants --------------------------
 T = 1650245.73705;//Thrust in N
 mdot = 592.64056;//mass flow is considered constant (kg/s);
 Re = 6378135;//Radius of earth in meters;
 ge = 9.81;//gravity g;
+
+
+//let
+Z0 = tan(beta / 2);
 
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // Initial Conditions
@@ -26,6 +17,7 @@ gammanot = (89.9975*%pi)/180;//gamma must be in radians;
 Vnot = 134.112;//Initial velocity 300 mph, but in meters/sec:
 Hnot = 6096;//Initial Altitude... 20kft...in meters
 Xnot = 0;//Initial X position
+
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
